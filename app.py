@@ -7,31 +7,48 @@ import cv2
 
 # set some pre-defined configurations for the page, such as the page title, logo-icon, page loading state (whether the page is loaded automatically or you need to perform some action for loading)
 st.set_page_config(
-    page_title="Face Mask Detection",
+    page_title="Indian Currency Detection App",
     page_icon = ":brain:",
     initial_sidebar_state = 'auto'
 )
 
+# Footer section
+st.markdown("""
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 50%;
+            background-color: #f1f1f1;
+            color: #333;
+            text-align: center; /* Center-align text */
+            padding: 1px 0; /* Padding top and bottom */
+            box-sizing: border-box; /* Ensure padding is included in width */
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+
+
+st.markdown('<p class="footer">Developed by Meet Solanki, Student of Artificial Intelligence and Machine Learning</p>', unsafe_allow_html=True)
 
 # Load the saved model
-model = load_model(r'Model\best_currency_model.h5')
+model = load_model(r'Model/best_currency_model.h5')
 width,height = 150,150
 
 # Define the category labels
 categories = ['10 Rupees Note', '100 Rupees Note', '20 Rupees Note', '200 Rupees Note', '2000 Rupees Note', '50 Rupees Note', '500 Rupees Note']
 
-st.title('Indian Notes Currency Classifier')
-
 
 with st.sidebar:
         st.subheader("Below are sample images With result")
         st.title("100 Rupees Note")
-        st.image(r'Test\image.webp')
+        st.image(r'Test/image.webp')
         st.title("2000 Rupees Note")
-        st.image(r'Test\note.jpeg')
+        st.image(r'Test/note.jpeg')
         st.subheader("Below are sample video With result")
         st.title("2000 Rupee Note")
-        st.video(r'Test\Video.webm')
+        st.video(r'Test/Video.webm')
 
 def preprocess_image(image):
  # Load and preprocess the image
