@@ -26,12 +26,12 @@ st.title('Indian Notes Currency Classifier')
 with st.sidebar:
         st.subheader("Below are sample images With result")
         st.title("100 Rupees Note")
-        st.image(r'Test\image.webp')
+        st.image(r'Test/image.webp')
         st.title("2000 Rupees Note")
-        st.image(r'Test\note.jpeg')
+        st.image(r'Test/note.jpeg')
         st.subheader("Below are sample video With result")
         st.title("2000 Rupee Note")
-        st.video(r'Test\Video.webm')
+        st.video(r'Test/Video.webm')
 
 def preprocess_image(image):
  # Load and preprocess the image
