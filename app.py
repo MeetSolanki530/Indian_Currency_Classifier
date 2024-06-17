@@ -18,11 +18,11 @@ st.markdown("""
         .footer {
             position: fixed;
             bottom: 0;
-            width: 100%;
+            width: 50%;
             background-color: #f1f1f1;
             color: #333;
             text-align: center; /* Center-align text */
-            padding: 10px 0; /* Padding top and bottom */
+            padding: 1px 0; /* Padding top and bottom */
             box-sizing: border-box; /* Ensure padding is included in width */
         }
     </style>
