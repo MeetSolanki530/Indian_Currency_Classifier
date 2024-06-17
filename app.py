@@ -27,7 +27,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="footer">Developed by [Meet Solanki], [Artificial Intelligence and Machine Learning Student]</p>', unsafe_allow_html=True)
+st.markdown('<p class="footer">Developed by Meet Solanki, Student of Artificial Intelligence and Machine Learning</p>', unsafe_allow_html=True)
 
 # Load the saved model
 model = load_model(r'Model/best_currency_model.h5')
