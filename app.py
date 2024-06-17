@@ -21,6 +21,9 @@ st.markdown("""
             width: 100%;
             background-color: #f1f1f1;
             color: #333;
+            text-align: center; /* Center-align text */
+            padding: 10px 0; /* Padding top and bottom */
+            box-sizing: border-box; /* Ensure padding is included in width */
         }
     </style>
 """, unsafe_allow_html=True)
