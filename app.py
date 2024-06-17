@@ -38,7 +38,7 @@ st.markdown("""
             background-color: #f1f1f1;
             color: #333;
             text-align: center; /* Center-align text */
-            padding: 10px 0; /* Padding top and bottom */
+            padding: 1px 0; /* Padding top and bottom */
             box-sizing: border-box; /* Ensure padding is included in width */
             z-index: 10; /* Ensure the footer is above other content */
         }
