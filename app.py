@@ -12,21 +12,43 @@ st.set_page_config(
     initial_sidebar_state = 'auto'
 )
 
+# # Footer section
+# st.markdown("""
+#     <style>
+#         .footer {
+#             position: fixed;
+#             bottom: 0;
+#             width: 50%;
+#             background-color: #f1f1f1;
+#             color: #333;
+#             text-align: center; /* Center-align text */
+#             padding: 1px 0; /* Padding top and bottom */
+#             box-sizing: border-box; /* Ensure padding is included in width */
+#         }
+#     </style>
+# """, unsafe_allow_html=True)
+
 # Footer section
 st.markdown("""
     <style>
         .footer {
             position: fixed;
             bottom: 0;
-            width: 50%;
+            width: 100%;
             background-color: #f1f1f1;
             color: #333;
             text-align: center; /* Center-align text */
-            padding: 1px 0; /* Padding top and bottom */
+            padding: 10px 0; /* Padding top and bottom */
             box-sizing: border-box; /* Ensure padding is included in width */
+            z-index: 10; /* Ensure the footer is above other content */
+        }
+
+        body {
+            padding-bottom: 50px; /* Adjust according to footer height */
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 st.markdown('<p class="footer">Developed by Meet Solanki, Student of Artificial Intelligence and Machine Learning</p>', unsafe_allow_html=True)
 
