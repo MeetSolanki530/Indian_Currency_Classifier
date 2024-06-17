@@ -34,7 +34,7 @@ st.markdown("""
         .footer {
             position: fixed;
             bottom: 0;
-            width: 100%;
+            width: 50%;
             background-color: #f1f1f1;
             color: #333;
             text-align: center; /* Center-align text */
