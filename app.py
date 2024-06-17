@@ -14,7 +14,7 @@ st.set_page_config(
 
 
 # Load the saved model
-model = load_model(r'Model\best_currency_model.h5')
+model = load_model(r'Model/best_currency_model.h5')
 width,height = 150,150
 
 # Define the category labels
